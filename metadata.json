@@ -1,0 +1,7 @@
+{
+  "name": "도서관 좌석 예약 시스템 (Library Seat Booking)",
+  "description": "Google Apps Script(GAS) 기반 실시간 도서관 좌석 조회, 좌석 선택 예약 및 내 예약 확인/취소 모바일 퍼스트 웹앱",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
