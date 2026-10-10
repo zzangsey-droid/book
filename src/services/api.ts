@@ -1,6 +1,8 @@
 import { Seat, Reservation, CreateReservationPayload } from '../types';
 
-export const DEFAULT_GAS_URL = 'https://script.google.com/macros/s/AKfycbwjIXTHiS5PSo9PWxyy04Vsuy6r53ZgA1AnXN4Qe8HyBzm2rPJRItw55q0vuuF0rkHAWA/exec';
+export const DEFAULT_GAS_URL =
+  (typeof import.meta !== 'undefined' && (import.meta as any).env?.VITE_GAS_API_URL) ||
+  'https://script.google.com/macros/s/AKfycbwjIXTHiS5PSo9PWxyy04Vsuy6r53ZgA1AnXN4Qe8HyBzm2rPJRItw55q0vuuF0rkHAWA/exec';
 const STORAGE_KEY_API_URL = 'library_seat_gas_api_url';
 const STORAGE_KEY_LOCAL_SEATS = 'library_seat_local_seats_v2';
 const STORAGE_KEY_LOCAL_RESERVATIONS = 'library_seat_local_reservations_v2';
